@@ -1,9 +1,10 @@
 #include<stdio.h>
-#include<string.h>
-void main()
+int main()
 {
-char ch[20];
-printf("enter the string:");
-gets(ch);
-printf("the reverse of string is:%s",strrev(ch));
-}
+int num, sum = 0, rem, temp; printf("\nEnter a Number:\t");
+scanf("%d", &num); for(temp = num; num > 0;)
+{ rem = num%10;
+sum = (sum*10) + rem; num = num/10;
+} printf("\nReverse of %d:\t%d\n", temp, sum);
+return 0;
+ }
